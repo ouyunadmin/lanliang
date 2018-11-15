@@ -1,7 +1,8 @@
 <template>
     <div>
         A：{{a}}
-        <div @click="onC" style="cursor: pointer">链接跳转</div>
+        <div @click="onC" style="cursor: pointer">链接b跳转</div>
+        <div @click="onCn" style="cursor: pointer">链接c跳转</div>
     </div>
 </template>
 <script>
@@ -13,7 +14,20 @@ export default {
     },
     methods: {
         onC(){
-            
+          this.$router.push({
+              name: 'b',
+              params: {
+                  id:'bbbb'
+              }
+          })  
+        },
+        onCn(){
+            this.$router.push({
+                path: 'c',
+                query: {
+                    id:'cccc'
+                }
+            })
         }
     }
 }

@@ -9,6 +9,9 @@ export default {
         return{
             c: 'c路由'
         }
+    },
+    created(){
+        console.log(this.$route.query.id)
     }
 }
 </script>
