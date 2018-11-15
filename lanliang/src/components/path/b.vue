@@ -9,9 +9,6 @@ export default {
         return{
             b: 'b路由'
         }
-    },
-    created(){
-        console.log(this.$route.params.id)
     }
 }
 </script>
