@@ -13,7 +13,10 @@ export default {
         return{
             demo: '要发送的数据',
             show:false,
-            x:'actions'
+            x:'actions',
+            log:{
+                to:'qweqwe'
+            }
         }
     },
     created(){
@@ -26,6 +29,7 @@ export default {
     methods: {
         onC(){
             this.show = true
+            window.localStorage.setItem('loginInfo', JSON.stringify(this.log))
         }
     }
 }

@@ -3,6 +3,7 @@
         获取数据::{{data}}
         <div @click="onC" style="cursor: pointer"> 点击传值 </div>
         <div>这是子组件信息{{sunData}}</div>
+        <div>localS {{ lo }}</div>
         <sun v-if="show" :trun="tran" @chuan="chuanD"></sun>
     </div>
 </template>
@@ -14,10 +15,12 @@ export default {
             data:'',
             tran: '了了了了',
             show: true,
-            sunData: ''
+            sunData: '',
+            lo:''
         }
     },
     created(){
+        this.lo = window.localStorage.getItem('loginInfo')
         // this.data = this.$store.getters.getData // 获取vuex中的数据
         // console.log(this.$store.getters.getData)
     },
