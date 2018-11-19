@@ -6,6 +6,7 @@ import set from '@/components/set/set.vue'
 import a from '@/components/path/a.vue'
 import b from '@/components/path/b.vue'
 import c from '@/components/path/c.vue'
+import leftRight from '@/components/leftRight/leftRight'
 
 Vue.use(Router)
 
@@ -40,7 +41,11 @@ export default new Router({
       path: '/c',
       name: 'c',
       component: c
-    }
-    
+    },
+    {
+      path: '/leftright',
+      name: 'leftRight',
+      component: leftRight
+    },
   ]
 })
