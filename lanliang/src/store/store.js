@@ -16,8 +16,8 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    addData(context) {
-      context.commit('addData')
-    }
+    addCurrent({ commit }, cart) { 
+      commit('addData', cart)
+    },
   }
 })

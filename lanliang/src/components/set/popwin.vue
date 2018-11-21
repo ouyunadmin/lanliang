@@ -19,7 +19,7 @@ export default {
     // computed: mapGetters(['getData']), // 获取vuex方式二
     mounted(){
         // console.log(this.$store.getters.getData)
-        console.log(this.$store.dispatch('addData'))
+        console.log(this.$store.dispatch('addCurrent')) // action
     }
 }
 </script>

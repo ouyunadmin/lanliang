@@ -21,6 +21,7 @@ export default {
     },
     created(){
         this.$store.commit('addData',this.demo) 
+        // console.log(this.$store.dispatch('addCurrent')) // action
     },
     // context.state
     components: {
