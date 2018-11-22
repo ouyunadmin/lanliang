@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         onC(){
-          this.$router.push({
+          this.$router.push({ // 不在url中传值
               name: 'b',
               params: {
                   id:'bbbb'
@@ -22,7 +22,7 @@ export default {
           })  
         },
         onCn(){
-            this.$router.push({
+            this.$router.push({ // 在url中传值
                 path: 'c',
                 query: {
                     id:'cccc'
