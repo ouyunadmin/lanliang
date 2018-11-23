@@ -16,11 +16,13 @@ export default {
             tran: '了了了了',
             show: true,
             sunData: '',
-            lo:''
+            lo:'',
+            
         }
     },
     created(){
         this.lo = window.localStorage.getItem('loginInfo')
+        console.log(this.$store.getters.getToken)
         // this.data = this.$store.getters.getData // 获取vuex中的数据
         // console.log(this.$store.getters.getData)
     },

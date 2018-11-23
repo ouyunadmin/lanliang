@@ -21,6 +21,7 @@ export default {
     },
     created(){
         this.$store.commit('addData',this.demo) 
+        
         // console.log(this.$store.dispatch('addCurrent')) // action
     },
     // context.state
@@ -30,7 +31,11 @@ export default {
     methods: {
         onC(){
             this.show = true
-            window.localStorage.setItem('loginInfo', JSON.stringify(this.log))
+            // window.localStorage.setItem('loginInfo', JSON.stringify(this.log)) // localStorage
+            this.$store.dispatch('setToken','987654321') // 通过vuex的actions传值
+            this.$router.push({
+                path:'/get'
+            })
         }
     }
 }
