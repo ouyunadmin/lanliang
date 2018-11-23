@@ -7,6 +7,8 @@ import a from '@/components/path/a.vue'
 import b from '@/components/path/b.vue'
 import c from '@/components/path/c.vue'
 import leftRight from '@/components/leftRight/leftRight'
+// todolist
+import con from '@/components/todolist/conn.vue'
 
 Vue.use(Router)
 
@@ -47,5 +49,10 @@ export default new Router({
       name: 'leftRight',
       component: leftRight
     },
+    {
+      path: '/con',
+      name: 'con',
+      component: con
+    }
   ]
 })
