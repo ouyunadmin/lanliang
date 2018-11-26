@@ -23,7 +23,7 @@ export default {
     created(){
         this.lo = window.localStorage.getItem('loginInfo')
         console.log(this.$store.getters.getToken)
-        // this.data = this.$store.getters.getData // 获取vuex中的数据
+        // this.data = this.$store.getters.getData  // 获取vuex中的数据
         // console.log(this.$store.getters.getData)
     },
     methods: {
