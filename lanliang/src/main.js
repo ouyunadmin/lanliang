@@ -5,6 +5,11 @@ import App from './App'
 import router from './router'
 import store from './store/store.js'
 
+import "../node_modules/ag-grid-community/dist/styles/ag-grid.css"
+import "../node_modules/ag-grid-community/dist/styles/ag-theme-balham.css"
+
+import 'ag-grid-enterprise'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

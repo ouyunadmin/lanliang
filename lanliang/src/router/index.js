@@ -9,7 +9,8 @@ import c from '@/components/path/c.vue'
 import leftRight from '@/components/leftRight/leftRight'
 // todolist
 import con from '@/components/todolist/conn.vue'
-
+// agGrid
+import agGrid from '@/components/agGrid/adgrid.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -53,6 +54,11 @@ export default new Router({
       path: '/con',
       name: 'con',
       component: con
+    },
+    {
+      path: '/aggrid',
+      name: 'agGrid',
+      component: agGrid
     }
   ]
 })
