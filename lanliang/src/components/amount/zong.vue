@@ -9,7 +9,7 @@
     <bb v-if="isbb"></bb>
     <cc v-if="iscc"></cc>
     <div v-if="!isShowaa">
-      在aa的时候不展示
+      在bb的时候不展示
     </div>
   </div>
 </template>
@@ -36,7 +36,8 @@ export default {
       this.isaa = false,
       this.isbb = true,
       this.iscc = false,
-      this.$store.dispatch('getbbShow','')
+      // this.$store.dispatch('getbbShow','')
+      this.$store.dispatch('getbbShow',2)
       // this.$store.commit('bbisShow',2)
       // this.$store.dispatch('getbbShow',2)
       // console.log(this.$store.getters.getisShow)
@@ -51,7 +52,6 @@ export default {
   components: {
     aa,bb,cc
   },
-
   created() {
     // console.log(this.$store.getters.getisShow)
   },
