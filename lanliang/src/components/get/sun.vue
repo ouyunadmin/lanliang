@@ -17,6 +17,11 @@ export default {
       this.$emit('chuan', this.sunData);
     }
   },
+  mounted() {
+    this.$bus.$on('myData', (val) => {
+      console.log(val)
+    })
+  },
   props: ["trun"]
 };
 </script>

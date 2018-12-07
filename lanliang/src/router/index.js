@@ -11,6 +11,7 @@ import leftRight from '@/components/leftRight/leftRight'
 import con from '@/components/todolist/conn.vue'
 // agGrid
 import agGrid from '@/components/agGrid/adgrid.vue'
+import zong from '@/components/amount/zong.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -59,6 +60,11 @@ export default new Router({
       path: '/aggrid',
       name: 'agGrid',
       component: agGrid
+    },
+    {
+      path: '/zong',
+      name: 'zong',
+      component: zong
     }
   ]
 })

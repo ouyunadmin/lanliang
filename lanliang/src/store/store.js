@@ -4,7 +4,8 @@ vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     data: [],
-    token: ''
+    token: '',
+    bbis:''
   },
   mutations: {
     addData(state, cart) {
@@ -12,6 +13,10 @@ export default new Vuex.Store({
     },
     toKen(state,num) {
       state.token = num
+    },
+    bbisShow(state, val) {
+      // console.log(data)
+      state.bbis = val
     }
   },
   getters: {
@@ -20,6 +25,9 @@ export default new Vuex.Store({
     },
     getToken(state) {
       return state.token
+    },
+    getisShow(state) {
+      return state.bbis
     }
   },
   actions: {
@@ -28,6 +36,9 @@ export default new Vuex.Store({
     },
     setToken({ commit },val) {
       commit('toKen', val)
+    },
+    getbbShow({commit},val){
+      commit('bbisShow',val)
     }
   }
 })

@@ -9,9 +9,9 @@ import "../node_modules/ag-grid-community/dist/styles/ag-grid.css"
 import "../node_modules/ag-grid-community/dist/styles/ag-theme-balham.css"
 
 import 'ag-grid-enterprise'
-
+import Bus from './bus/index.js'
 Vue.config.productionTip = false
-
+Vue.prototype.$bus = Bus
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

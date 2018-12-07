@@ -14,15 +14,14 @@ export default {
         return{
             data:'',
             tran: '了了了了',
-            show: true,
+            show: false,
             sunData: '',
             lo:'',
-            
         }
     },
     created(){
         this.lo = window.localStorage.getItem('loginInfo')
-        console.log(this.$store.getters.getToken)
+        // console.log(this.$store.getters.getToken)
         // this.data = this.$store.getters.getData  // 获取vuex中的数据
         // console.log(this.$store.getters.getData)
     },
@@ -36,6 +35,9 @@ export default {
     },
     components: {
         sun
+    },
+    created() {
+        this.$bus.$emit('myData',999)
     }
 }
 </script>

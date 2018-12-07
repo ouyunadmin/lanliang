@@ -18,8 +18,9 @@ export default {
               name: 'b',
               params: {
                   id:'bbbb'
-              }
+              },
           })  
+          this.$bus.emit('myData',999) // 通过BUS总线往B传值
         },
         onCn(){
             this.$router.push({ // 在url中传值
