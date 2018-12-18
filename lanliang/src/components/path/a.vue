@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="height:1000px;">
         A：{{a}}
         <div @click="onC" style="cursor: pointer">链接b跳转</div>
         <div @click="onCn" style="cursor: pointer">链接c跳转</div>
@@ -12,7 +12,17 @@ export default {
             a: 'a路由'
         }
     },
+    mounted() {
+        // 滚动监听
+        window.addEventListener('scroll', this.handleScroll, true); 
+    },
     methods: {
+        handleScroll: function () {
+            // 滚动方法
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+            console.log(scrollTop)
+            console.log(document.body.scrollHeight)
+        },
         onC(){
           this.$router.push({ // 不在url中传值
               name: 'b',
