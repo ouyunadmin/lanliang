@@ -9,12 +9,35 @@
 export default {
     data () {
         return{
-            a: 'a路由'
+            a: 'a路由',
+            newDataCity:[
+                {
+                    list: [
+                        {
+                            name: '北京'
+                        },
+                        {
+                            name: '上海'
+                        }
+                    ]
+                },
+                {
+                    list: [
+                        {
+                            name: '商丘'
+                        },
+                        {
+                            name: '杭州'
+                        }
+                    ]
+                }
+            ]
         }
     },
     mounted() {
         // 滚动监听
         window.addEventListener('scroll', this.handleScroll, true); 
+        this.demoData()
     },
     methods: {
         handleScroll: function () {
@@ -39,6 +62,17 @@ export default {
                     id:'cccc'
                 }
             })
+        },
+        demoData() {
+            let newData = []
+            this.newDataCity.forEach(e => {
+                // console.log(e)
+                e.list.forEach(item => {
+                    // console.log(item.name)
+                    newData.push(item.name)
+                })
+            })
+            console.log(newData)
         }
     }
 }

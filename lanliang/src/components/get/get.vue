@@ -31,6 +31,10 @@ export default {
         },
         chuanD(val){
             this.sunData = val
+        },
+        f() {
+            // console.log(111)
+            return 1111
         }
     },
     components: {
@@ -38,6 +42,10 @@ export default {
     },
     created() {
         this.$bus.$emit('myData',999)
+    },
+    mounted() {
+        let [a = this.f()] = [undefined]
+        console.log(a)
     }
 }
 </script>
