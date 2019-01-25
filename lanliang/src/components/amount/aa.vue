@@ -18,6 +18,7 @@ export default {
       // console.log(val)
     }
   }
+  // id: "ORGA19010200163001A000"
 }
 </script>
 <style >
