@@ -14,7 +14,7 @@ export default {
   },
   mounted() {
     Bus.$on("msg", e => {
-      console.log(`传来的数据是：${e}`); // ===  console.log(`传来的数据是：` + e)
+      console.log(`传来的数据是：${e}`); // ===  console.log(`传来的数据是：` + e)111
     });
   }
 };
