@@ -16,7 +16,7 @@ export default {
     mounted() {
         this.$bus.$on('myData', (val) => { // 通过BUS总线，接收A传递过来的值
             console.log(val)
-            console.log('OK')
+            // console.log('OK')
         })
     }
 }
