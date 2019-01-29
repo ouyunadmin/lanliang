@@ -4,7 +4,7 @@
     <div @click="onC" style="cursor: pointer">链接b跳转</div>
     <div @click="onCn" style="cursor: pointer">链接c跳转</div>
     <button @click="aSunClick">进入A的子组件</button>
-    <a-sun v-if="isTrue">a的子组件</a-sun>
+    <a-sun v-show="isTrue">a的子组件</a-sun>
   </div>
 </template>
 <script>
