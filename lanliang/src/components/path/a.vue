@@ -37,7 +37,7 @@ export default {
           ]
         }
       ]
-    };
+    }
   },
   mounted() {
     // 滚动监听
