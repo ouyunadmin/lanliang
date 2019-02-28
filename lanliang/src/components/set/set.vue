@@ -33,12 +33,9 @@ export default {
       this.$store.dispatch("setToken", "987654321"); // 通过vuex的actions传值
       this.$router.push({
         path: "/get"
-      });
+      })
     },
     demo() {
-
-
-
       let insert = value => ({
         into: array => ({
           after: afterValue => {
@@ -50,13 +47,6 @@ export default {
       insert(2)
         .into([1, 3])
         .after(1)
-        
-
-
-
-
-
-
     }
   }
 };
