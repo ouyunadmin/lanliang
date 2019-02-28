@@ -30,7 +30,7 @@ export default {
     onC(x = 0, y = 1) {
       this.show = true;
       // window.localStorage.setItem('loginInfo', JSON.stringify(this.log)) // localStorage
-      this.$store.dispatch("setToken", "987654321"); // 通过vuex的actions传值
+      this.$store.dispatch("setToken", "9876543211"); // 通过vuex的actions传值
       this.$router.push({
         path: "/get"
       })
