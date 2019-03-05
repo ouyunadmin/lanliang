@@ -71,7 +71,7 @@ export default {
         return result.json()
       })
       .then(rowData => {
-        // console.log(rowData)123
+        // console.log(rowData)1234
         return this.rowDataGo = rowData
       })
     // 手动添加的数据  
