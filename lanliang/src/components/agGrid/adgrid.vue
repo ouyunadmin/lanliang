@@ -60,7 +60,7 @@ export default {
   beforeMount() {
     this.columnDefsGo = [
       // headerName：表头名子， field：表头对应内容区的内容， checkboxSelection: true：添加选择框
-      // suppressFilter: true 打开过滤器
+      // suppressFilter: true 打开过滤 器
       {headerName: '品牌', field: 'make', checkboxSelection: true},
       {headerName: '国家', field: 'model',suppressFilter: true},
       {headerName: '单价', field: 'price'}
@@ -71,7 +71,7 @@ export default {
         return result.json()
       })
       .then(rowData => {
-        // console.log(rowData)
+        // console.log(rowData)123
         return this.rowDataGo = rowData
       })
     // 手动添加的数据  
