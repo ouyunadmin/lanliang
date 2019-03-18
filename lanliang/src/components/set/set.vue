@@ -16,7 +16,7 @@ export default {
       log: {
         to: "qweqwe"
       }
-    };
+    }
   },
   created() {
     this.$store.commit("addData", this.demo);
