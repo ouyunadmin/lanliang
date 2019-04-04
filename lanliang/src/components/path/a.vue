@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     handleScroll: function() {
-      // 滚动方法
+      // 滚动方法 .
       var scrollTop =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
@@ -90,7 +90,7 @@ export default {
     aSunClick() {
       // Bus.$emit('msg', '我要传给兄弟组件们，你收到没有')
       Bus.$emit("msg", "我要传给兄弟组件们，你收到没有");
-      this.isTrue = true
+      this.isTrue = true;
     }
   }
 };
