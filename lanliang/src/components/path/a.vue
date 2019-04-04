@@ -59,7 +59,7 @@ export default {
     },
     onC() {
       this.$router.push({
-        // 不在url中传值
+        // 不在url中传值 .
         name: "b",
         params: {
           id: "bbbb"
@@ -69,7 +69,7 @@ export default {
     },
     onCn() {
       this.$router.push({
-        // 在url中传值
+        // 在url中传值 .
         path: "c",
         query: {
           id: "cccc"
