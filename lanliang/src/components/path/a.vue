@@ -40,7 +40,7 @@ export default {
     }
   },
   mounted() {
-    // 滚动监听
+    // 滚动监听13
     window.addEventListener("scroll", this.handleScroll, true);
     this.demoData();
   },
