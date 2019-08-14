@@ -1,5 +1,5 @@
 <template>
-  <div style="height:1000px;">
+  <div style="height:1000px">
     A：{{a}}
     <div @click="onC" style="cursor: pointer">链接b跳转</div>
     <div @click="onCn" style="cursor: pointer">链接c跳转</div>
@@ -8,8 +8,8 @@
   </div>
 </template>
 <script>
-import aSun from "./aSun.vue";
-import Bus from "@/bus/index.js";
+import aSun from "./aSun.vue"
+import Bus from "@/bus/index.js"
 export default {
   data() {
     return {
@@ -41,8 +41,8 @@ export default {
   },
   mounted() {
     // 滚动监听13
-    window.addEventListener("scroll", this.handleScroll, true);
-    this.demoData();
+    window.addEventListener("scroll", this.handleScroll, true)
+    this.demoData()
   },
   components: {
     aSun
@@ -53,7 +53,7 @@ export default {
       var scrollTop =
         window.pageYOffset ||
         document.documentElement.scrollTop ||
-        document.body.scrollTop;
+        document.body.scrollTop
       // console.log(scrollTop)
       // console.log(document.body.scrollHeight)
     },
@@ -64,7 +64,7 @@ export default {
         params: {
           id: "bbbb"
         }
-      });
+      })
       //   this.$bus.emit('myData',99988) // 通过BUS总线往B传值
     },
     onCn() {
@@ -74,26 +74,26 @@ export default {
         query: {
           id: "cccc"
         }
-      });
+      })
     },
     demoData() {
-      let newData = [];
+      let newData = []
       this.newDataCity.forEach(e => {
         // console.log(e)
         e.list.forEach(item => {
           // console.log(item.name)
-          newData.push(item.name);
-        });
-      });
+          newData.push(item.name)
+        })
+      })
       // console.log(newData)
     },
     aSunClick() {
       // Bus.$emit('msg', '我要传给兄弟组件们，你收到没有')
-      Bus.$emit("msg", "我要传给兄弟组件们，你收到没有");
-      this.isTrue = true;
+      Bus.$emit("msg", "我要传给兄弟组件们，你收到没有")
+      this.isTrue = true
     }
   }
-};
+}
 </script>
 <style>
 </style>
