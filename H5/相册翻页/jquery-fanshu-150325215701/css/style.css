@@ -83,10 +83,12 @@ span.reference a:hover{
 .book_wrapper{
 	margin:0 auto;
 	padding-top:50px;
-	width:905px;
-	height:540px;
+	/* width:905px; */
+	width:1350px;
+	height:560px;
 	position:relative;
 	background:transparent url(../images/bg.png) no-repeat 9px 27px;
+	background-size: 100%;
 }
 .book_wrapper h1{
 	color:#13386a;
@@ -123,8 +125,8 @@ span.reference a:hover{
 }
 .book_wrapper img{
 	/* margin:10px 0px 5px 35px; */
-	/* width:300px; */
-	width:370px;
+	/* width:370px; */
+	width:570px;
 	padding:4px;
 	border:1px solid #ddd;
 	-moz-box-shadow:1px 1px 1px #fff;
